@@ -1,3 +1,4 @@
+//DICHIARAZIONI VARIABILI
 const images = [
     {
       image: 'img/01.webp',
@@ -27,51 +28,31 @@ const images = [
 ];
   
 let index = 0;
-
 let upBotton = document.getElementById("changeUp");
 let downBotton = document.getElementById("changeDown");
 let padre = document.getElementsByClassName("img-container")[0];
-let figlio = document.createElement("div");
-
-figlio.classList = "w-100 h-100 items position-relative";
-let immagine = images[index].image;
-let titolo = images[index].title;
-let testo = images[index].text;
-figlio.innerHTML += '<img src="'+immagine+'" alt="img-01" class="w-100 h-100 ">';
-figlio.innerHTML += '<h4 class="title-desc">'+titolo+'</h4>';
-figlio.innerHTML += '<p class="para-desc">'+testo+'</p>';
-padre.append(figlio);
+let figlio = document.getElementById("content");
 
 
-downBotton.addEventListener("click",
+//FUNZIONE DI CAMBIO IMMAGINE
+function changeImg(top){
 
-    function(){
-        figlio.innerHTML = "";
-        index == images.length - 1? index = 0: index++;
-        let immagine = images[index].image;
-        let titolo = images[index].title;
-        let testo = images[index].text;
-        figlio.innerHTML += '<img src="'+immagine+'" alt="img-01" class="w-100 h-100 ">';
-        figlio.innerHTML += '<h4 class="title-desc">'+titolo+'</h4>';
-        figlio.innerHTML += '<p class="para-desc">'+testo+'</p>';
-        padre.append(figlio);
-
-    }
-)
-
-upBotton.addEventListener("click",
-
-    function(){
-
-        figlio.innerHTML = "";
+    //CONTROLLO DEL POSIZIONAMENTO DEL PULSANTE
+    if(top){
         index == 0? index = images.length - 1: index--;
-        let immagine = images[index].image;
-        let titolo = images[index].title;
-        let testo = images[index].text;
-        figlio.innerHTML += '<img src="'+immagine+'" alt="img-01" class="w-100 h-100 ">';
-        figlio.innerHTML += '<h4 class="title-desc">'+titolo+'</h4>';
-        figlio.innerHTML += '<p class="para-desc">'+testo+'</p>';
-        padre.append(figlio);
-
+    }else{
+        index == images.length - 1? index = 0: index++;
     }
-)
+    
+    let immagine = images[index].image;
+    let titolo = images[index].title;
+    let testo = images[index].text;
+
+    //INSERIMENTO CONTENUTO
+    figlio.innerHTML = "";
+    figlio.innerHTML += '<img src="'+immagine+'" alt="img-01" class="w-100 h-100 ">';
+    figlio.innerHTML += '<h4 class="title-desc">'+titolo+'</h4>';
+    figlio.innerHTML += '<p class="para-desc">'+testo+'</p>';
+
+    padre.append(figlio);
+}

@@ -16,17 +16,19 @@
     <div class="W-100 container d-flex align-items-center justify-content-center">
         <div class="img-container postion-relative">
 
-            <!-- <div class="w-100 h-100 items">
+            <!-- contenuto del container -->
+            <div class="w-100 h-100 items position-relative" id="content">
                 <img src="img/01.webp" alt="img-01" class="w-100 h-100 ">
                 <h3 class="title-desc">Marvel's Spiderman Miles Morale</h3>
                 <p class="para-desc">Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.</p>
-            </div> -->
+            </div>
 
-            <div class="position-absolute d-block bg-white start-50 div-arrow d-flex align-items-center justify-content-center" style="top:24%" id="changeUp">
+            <!-- pulsanti di ovvio ffunzione -->
+            <div class="position-absolute d-block bg-white start-50 div-arrow d-flex align-items-center justify-content-center" style="top:24%" id="changeUp" onclick="changeImg(1)">
                 <i class="fa-solid fa-arrow-up-long" aria-hidden="true"></i>
             </div>
     
-            <div class="position-absolute d-block bg-white start-50 div-arrow d-flex align-items-center justify-content-center" style="bottom: 24%;" id="changeDown">
+            <div class="position-absolute d-block bg-white start-50 div-arrow d-flex align-items-center justify-content-center" style="bottom: 24%;" id="changeDown" onclick="changeImg(0)">
                 <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
             </div>
         </div>
