@@ -38,6 +38,8 @@ let immagine = images[index].image;
 let titolo = images[index].title;
 let testo = images[index].text;
 figlio.innerHTML += '<img src="'+immagine+'" alt="img-01" class="w-100 h-100 ">';
+figlio.innerHTML += '<h4 class="title-desc">'+titolo+'</h4>';
+figlio.innerHTML += '<p class="para-desc">'+testo+'</p>';
 padre.append(figlio);
 
 
@@ -50,6 +52,8 @@ downBotton.addEventListener("click",
         let titolo = images[index].title;
         let testo = images[index].text;
         figlio.innerHTML += '<img src="'+immagine+'" alt="img-01" class="w-100 h-100 ">';
+        figlio.innerHTML += '<h4 class="title-desc">'+titolo+'</h4>';
+        figlio.innerHTML += '<p class="para-desc">'+testo+'</p>';
         padre.append(figlio);
 
     }
@@ -65,6 +69,8 @@ upBotton.addEventListener("click",
         let titolo = images[index].title;
         let testo = images[index].text;
         figlio.innerHTML += '<img src="'+immagine+'" alt="img-01" class="w-100 h-100 ">';
+        figlio.innerHTML += '<h4 class="title-desc">'+titolo+'</h4>';
+        figlio.innerHTML += '<p class="para-desc">'+testo+'</p>';
         padre.append(figlio);
 
     }

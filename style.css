@@ -13,6 +13,25 @@
     height: 400px;
 }
 
+.title-desc{
+    color: white;
+    position: absolute;
+    right: 0;
+    margin-right: 150px;
+    bottom: 35%;
+}
+
+.para-desc{
+    color: white;
+    position: absolute;
+    right: 0;
+    margin-right: 150px;
+    bottom: 26%;
+    text-align: end;
+    font-size: 0.9em;
+    padding: 5px;
+}
+
 .active{
     display: flex!important;
     align-items: center;
