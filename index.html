@@ -1,0 +1,47 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- LINK BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- LINK FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/c0073e0e62.js" crossorigin="anonymous"></script>
+    <title>carosello</title>
+</head>
+<body>
+    <div class="W-100 container d-flex align-items-center justify-content-center">
+        <div class="img-container postion-relative">
+            
+            <div class="w-100 h-100 items">
+                <img src="img/01.webp" alt="img-01" class="w-100 h-100 ">
+            </div>
+            <div class="w-100 h-100 items active">
+                <img src="img/02.webp" alt="img-02" class="w-100 h-100 ">
+            </div>
+            <div class="w-100 h-100 items">
+                <img src="img/03.webp" alt="img-03" class="w-100 h-75 ">
+            </div>
+            <div class="w-100 h-100 items">
+                <img src="img/04.webp" alt="img-04" class="w-100 h-175 ">
+            </div>
+            <div class="w-100 h-100 items">
+                <img src="img/05.webp" alt="img-05" class="w-100 h-100 ">
+            </div>
+
+            <div class="position-absolute d-block bg-white start-50 div-arrow d-flex align-items-center justify-content-center" style="top:24%" id="changeUp">
+                <i class="fa-solid fa-arrow-up-long" aria-hidden="true"></i>
+            </div>
+    
+            <div class="position-absolute d-block bg-white start-50 div-arrow d-flex align-items-center justify-content-center" style="bottom: 24%;" id="changeDown">
+                <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>

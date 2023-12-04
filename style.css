@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+}
+
+.img-container{
+    width: 600px;
+    height: 400px;
+}
+
+.img-container > div{
+    display: none;
+}
+
+.active{
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-arrow{
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: small;
+    opacity: 0.75;
+    cursor: pointer;
+}
