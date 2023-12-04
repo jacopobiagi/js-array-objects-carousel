@@ -33,7 +33,7 @@ let downBotton = document.getElementById("changeDown");
 let padre = document.getElementsByClassName("img-container")[0];
 let figlio = document.createElement("div");
 
-figlio.classList = "w-100 h-100 items";
+figlio.classList = "w-100 h-100 items position-relative";
 let immagine = images[index].image;
 let titolo = images[index].title;
 let testo = images[index].text;

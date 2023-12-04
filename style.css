@@ -17,16 +17,16 @@
     color: white;
     position: absolute;
     right: 0;
-    margin-right: 150px;
-    bottom: 35%;
+    margin-right: 10px;
+    bottom: 25%;
 }
 
 .para-desc{
     color: white;
     position: absolute;
     right: 0;
-    margin-right: 150px;
-    bottom: 26%;
+    margin-right: 10px;
+    bottom: 6%;
     text-align: end;
     font-size: 0.9em;
     padding: 5px;
@@ -41,8 +41,10 @@
 .div-arrow{
     width: 25px;
     height: 25px;
-    border-radius: 10px;
+    border-radius: 15px;
     font-size: small;
     opacity: 0.75;
     cursor: pointer;
+    background-color: white;
+    z-index: 1;
 }
